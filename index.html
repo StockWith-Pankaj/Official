@@ -313,7 +313,7 @@ src="https://www.facebook.com/tr?id=2127554748060721&ev=PageView&noscript=1"
                     <div class="logo">
                         <img id="logo-image" src="Pankaj.jpg" alt="Educational Channel Logo" loading="lazy">
                     </div>
-                    <a id="telegram-link" class="cta" href="#">Join Free Telegram</a>
+                    <a id="telegram-link" onclick="customEvent()" class="cta" href="#">Join Free Telegram</a>
                     <div class="feature-card">
                        <p class="blue"><span class="emoji">📞</span> Daily Free Nifty, Banknifty, Stock Calls! 📈🔔</p>
                     </div>
@@ -344,6 +344,12 @@ src="https://www.facebook.com/tr?id=2127554748060721&ev=PageView&noscript=1"
             document.getElementById('logo-image').src = config.imageSrc;
             document.getElementById('telegram-link').href = config.telegramLink;
         });
+    </script>
+
+        <script>
+        function customEvent() {
+            fbq('track', 'Subscribe');
+        }
     </script>
 
 </body></html>
